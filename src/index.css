@@ -233,6 +233,13 @@ header {
 
 /* --------------------------------- About Us Section STarts  
                         -------------------------------------------------------*/
+
+.contain-fit {
+  object-fit: contain;
+  height: auto !important;
+  width: 500px !important;
+}
+
 .common-section {
   margin: 5rem 0;
 }
