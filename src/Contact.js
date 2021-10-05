@@ -24,8 +24,9 @@ const Contact = () => {
     const { firstName, lastName, phone, email, address, message } = userData;
 
     if (firstName && lastName && phone && email && address && message) {
-      const res = fetch(
-        "https://reactfirebasewebsite-default-rtdb.firebaseio.com/userDataRecords.json",
+      const res = await fetch(
+        // Create Firebase Database and put your link here and add any name with .json at the end of database url like this "userDataRecord.json"
+        "https://payment-service-ed289-default-rtdb.asia-southeast1.firebasedatabase.app/userDataRecord.json",
         {
           method: "POST",
           headers: {
